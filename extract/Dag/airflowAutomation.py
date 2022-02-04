@@ -49,17 +49,6 @@ dq_goodToPersist = SparkSubmitOperator(
     dag=dag
 )
 
-# createDbAndTables = SparkSubmitOperator(
-#     task_id='create_DB_ext_tables_partions_Buckets',
-#     name="airflow-DB",
-#     application='/home/theshree/Documents/DBDA/BigData/PyCharm/ETL_HadoopEcosystem/bean/hiveWarehousingFromParquet.sh ',
-#     env_vars={'PYSPARK_DRIVER_PYTHON': '/home/theshree/myEnv/airflow-env/bin/python',
-#               'HADOOP_CONF_DIR': '/home/theshree/DBDA_HOME/hadoop-3.3.1/etc/hadoop',
-#               'PYSPARK_PYTHON': '/home/theshree/myEnv/airflow-env/bin/python',
-#               'AIRFLOW_CONN_SPARK_DEFAULT': 'local'},
-#     dag=dag
-# )
-
 createDbAndTables = BashOperator(task_id="create_DB_ext_tables_partions_Buckets",
                              bash_command="bash /home/theshree/Documents/DBDA/BigData/PyCharm/ETL_HadoopEcosystem/bean/hiveWarehousingFromParquet.sh ",
                              dag=dag)
