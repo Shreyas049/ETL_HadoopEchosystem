@@ -1,4 +1,3 @@
-This is PGDBDA-Sept 2021, Big Data miniproject by Shreyas Deshmukh, PRN:210940125017
 
 To clean everything and start from scratch, run 'clean.sh'.
 Do 'pip install -r requirements.txt' to set the environment.
@@ -22,3 +21,6 @@ Transform:
 --hiveWarehousingFromParquet.sh
 ML:
 --future_sales_prediction.py
+
+
+# Big Data project by Shreyas
