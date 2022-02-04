@@ -1,6 +1,6 @@
 from pyspark import SparkContext, SparkConf, SQLContext, StorageLevel
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, when, split, explode, window, count
+# from pyspark.sql.functions import col, when, split, explode, window, count
 from pyspark.sql.types import *
 
 master = 'local'
